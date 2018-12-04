@@ -39,7 +39,7 @@ const BulkInsert = (req, res) => {
   const run = () => {
 
     for (let i = 1; i <= number; i = i + 100) {
-      let incr = number - i < 100 ? number - i : 100;
+      let incr = number - i < 99 ? number - i : 100;
       let users = [];
       for (let j = i; j < i + incr; ++j) {
         users.push({
