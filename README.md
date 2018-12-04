@@ -1,0 +1,2 @@
+# nedb-server
+npm install
